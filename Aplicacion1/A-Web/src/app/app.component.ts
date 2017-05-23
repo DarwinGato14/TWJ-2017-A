@@ -10,6 +10,8 @@ export class AppComponent {
 
   parrafo:string="Este es un parrafo";
   colorBack:string="red";
+  alto:string="100px";
+  ancho:string="200px";
 
   url:string="https://angularjs.org/";
   title:string;

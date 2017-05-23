@@ -4,7 +4,7 @@
   <h1>{{usuario.apellido}}</h1>
   <h1>{{holaMundo()}}</h1>
 <a [href]="url">
-  <img src="https://angular.io/resources/images/logos/angular/angular.png" alt="">
+  <img src="https://angular.io/resources/images/logos/angular/angular.png" alt="" [style.width]="ancho" [style.width]="alto">
 </a>
   <button (click)="holaMundo()" name="Hola">dddddddd</button>
 </h1>
@@ -20,3 +20,4 @@
 <p [innerText]="parrafo" ></p>
 <h2>En el estilo se debe poner la comilla simple</h2>
 <input [value]="parrafo" [style.color]="'green'" [style.background-color]="colorBack">
+<app-stilo></app-stilo>
