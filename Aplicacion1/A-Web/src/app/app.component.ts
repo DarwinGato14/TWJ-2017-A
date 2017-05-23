@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import set = Reflect.set;
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  parrafo:string="Este es un parrafo";
+  colorBack:string="red";
+
   url:string="https://angularjs.org/";
   title:string;
   usuario:IUsuario={
-    nombre:"Darwin",
+    nombre:"",
     apellido:"Morocho"
   }
   constructor(){
+    this.parrafo="Este es un parrafo";
+    setTimeout(()=>{
+      this.usuario.nombre="Darwin"
+    }, 3000);
+
     this.holaMundo();
     console.log("entra al constructor");
   }

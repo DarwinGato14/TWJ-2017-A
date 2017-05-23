@@ -8,3 +8,15 @@
 </a>
   <button (click)="holaMundo()" name="Hola">dddddddd</button>
 </h1>
+
+<h2>Mantriene sincronizadas las variables</h2>
+<input value="{{usuario.nombre}}" >
+
+<p id="bind"></p>
+
+<h2>primwera forma con llaves </h2>
+<input value="{{parrafo}}" >
+<h2>one weight data binding {{usuario.nombre}}</h2>
+<p [innerText]="parrafo" ></p>
+<h2>En el estilo se debe poner la comilla simple</h2>
+<input [value]="parrafo" [style.color]="'green'" [style.background-color]="colorBack">

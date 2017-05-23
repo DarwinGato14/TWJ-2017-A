@@ -83,3 +83,9 @@ a [Sails](http://sailsjs.org) application
 
 sails new Aplicacion1
 sails lift
+
+## Levantar aplicacion de angular
+```
+>> ng serve
+
+```
