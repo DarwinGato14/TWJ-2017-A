@@ -89,3 +89,24 @@ sails lift
 >> ng serve
 
 ```
+## p.rojo itiqueta mas clase
+```
+>> <p class="rojo"></p>
+
+```
+
+## img.imagen-responsiva*3 crea el numero de veces necesarias
+```
+<img src="" alt="" class="imagen-responsiva">
+<img src="" alt="" class="imagen-responsiva">
+<img src="" alt="" class="imagen-responsiva">
+```
+## .fila>.columna*2+h1 crea ertiquetas dentro de otra ertiqueta
+```
+<div class="fila">
+  <div class="columna"></div>
+  <div class="columna"></div>
+  <h1></h1>
+</div>
+## img.imagen-responsiva*3 crea el numero de veces necesarias
+```
