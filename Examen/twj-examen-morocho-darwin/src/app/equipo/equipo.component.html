@@ -1,0 +1,65 @@
+<div class="container">
+
+  <br>
+  <br>
+  <br>
+  <h1 style="text-align: center">Equipo</h1>
+  <hr>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-4">
+
+      <h3> Nombre:</h3>
+    </div>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" placeholder="Nombre"
+             [(ngModel)]="nuevoEquipo.nombre">
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+      <h3> Fecha de creacion:</h3>
+    </div>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" placeholder="Fecha de creacion"
+             [(ngModel)]="nuevoEquipo.fechaCreacion" >
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+      <h3> Pais de residencia:</h3>
+    </div>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" placeholder="Pais de residencia"
+             [(ngModel)]="nuevoEquipo.paisResidencia" >
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+
+    <div class="col-sm-5" style="margin: 0 auto;">
+      <br >
+      <button type="submit" class="btn-primary" (click)="crearEquipo()">Registrar</button>
+    </div>
+  </div>
+  <br>
+
+  <br>
+  <div class="row">
+    <div class="col-md-12"
+         *ngFor="let equipo of equipos;let i = index;">
+      <app-equipoc [equipo]="equipo"></app-equipoc>
+    </div>
+
+
+  </div>
+</div>

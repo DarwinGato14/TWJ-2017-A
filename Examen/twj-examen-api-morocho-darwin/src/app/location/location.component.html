@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Cooperativa de transportes San Carlos</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"
+         *ngFor="let item of locations;let i = index;">
+      <app-locationinput [location]="item"></app-locationinput>
+      <br class="">
+    </div>
+
+
+  </div>
+</div>
