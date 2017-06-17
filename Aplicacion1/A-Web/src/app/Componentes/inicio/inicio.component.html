@@ -1,3 +1,4 @@
+<!--
 <div class="dropdown">
   <button class="btn btn-default " type="button">Tutorials
     <span class="caret"></span></button>
@@ -71,41 +72,77 @@
   </div>
 
 -->
-  <!--
-    <div class="container">
-      <h1>
-        Titulo
-      </h1>
-      <p>La mayoría de las funciones multimedia pueden ser precedidas por "min-" o "max-" para expresar "greater or equal
-        to" o "less than or equal to". Esto elimina la necesidad de usar los símbolos "<" y ">" los cuales podrían causar
-        conflictos con HTML y XML. Si usted usa una función multimedia sin especificarle un valor, la expresión retornara
-        verdadero si el valor es diferente de cero.</p>
+<!--
+  <div class="container">
+    <h1>
+      Titulo
+    </h1>
+    <p>La mayoría de las funciones multimedia pueden ser precedidas por "min-" o "max-" para expresar "greater or equal
+      to" o "less than or equal to". Esto elimina la necesidad de usar los símbolos "<" y ">" los cuales podrían causar
+      conflictos con HTML y XML. Si usted usa una función multimedia sin especificarle un valor, la expresión retornara
+      verdadero si el valor es diferente de cero.</p>
 
 
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6" style="background-color: red">Rojo</div>
+    <div class="col-sm-6" style="background-color: red">Rojo 2</div>
+    <div class="col-md-6" style="background-color: blue">Azul</div>
+    <div class="col-md-6" style="background-color: blue">Azul 2</div>
+    <div class="col-lg-6" style="background-color: green">Verde</div>
+    <div class="col-lg-6" style="background-color: green">Verde 2</div>
+    <div class="col-xl-6" style="background-color: yellow">Amarillo</div>
+    <div class="col-xl-6" style="background-color: yellow">Amarillo 2</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-12" style="background-color: red"> sssss</div>
+    <div class="col-md-12" style="background-color: blue">
+      <div class="row" style="background-color: darkgreen">
+        <div class="col-md-6" style="background-color: yellow"> admhadshvdsa</div>
+        <div class="col-md-6" style="background-color: aqua">asdfasd</div>
+      </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="col-sm-6" style="background-color: red">Rojo</div>
-      <div class="col-sm-6" style="background-color: red">Rojo 2</div>
-      <div class="col-md-6" style="background-color: blue">Azul</div>
-      <div class="col-md-6" style="background-color: blue">Azul 2</div>
-      <div class="col-lg-6" style="background-color: green">Verde</div>
-      <div class="col-lg-6" style="background-color: green">Verde 2</div>
-      <div class="col-xl-6" style="background-color: yellow">Amarillo</div>
-      <div class="col-xl-6" style="background-color: yellow">Amarillo 2</div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-md-12" style="background-color: red"> sssss</div>
-      <div class="col-md-12" style="background-color: blue">
-        <div class="row" style="background-color: darkgreen">
-          <div class="col-md-6" style="background-color: yellow"> admhadshvdsa</div>
-          <div class="col-md-6" style="background-color: aqua">asdfasd</div>
+
+
+<div class="container">
+
+<input type="text" [value]="nombre" #nombreEtiqueta>
+{{nombre}}
+<button class="btn btn-primary" (click)="goToCambiar()" >Cambiar valor</button>
+<button (blur)="goToOnblour()" >Clicke</button>
+<h1 (click)="cambiarNombreInput(nombreEtiqueta.value)">Cambiar en la vista</h1>
+</div>  -->
+<div class="container">
+  <div class="row" >
+    <div class="col-sm-4" *ngFor="let usuario of arregloUsuario">
+      <div class="card" style="width: 20rem;">
+
+        <div class="card-block">
+          <h4 class="card-title">  {{usuario.nombre}}</h4>
+          <p class="card-text"> {{usuario.nombre}}
+            {{usuario.apellido}}
+            </p>
+          <a href="#" class="btn btn-primary btn-block  ">Go somewhere</a>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-  -->
+<div >
+ <ul>
+   <li *ngFor="let usuario of arregloUsuario">
+     {{usuario.nombre}}
+     {{usuario.apellido}}
+
+   </li>
+ </ul>
+
+</div>
